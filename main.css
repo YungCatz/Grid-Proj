@@ -98,7 +98,6 @@
 }
 
 .thing {
-    border: 1px solid white;
     position: absolute;
     user-select: none;
     display: flex;
@@ -116,4 +115,14 @@
 .thing>h1 {
     color: white;
     user-select: none;
+}
+
+#whatToDo {
+    transition: 1s;
+    color: white;
+    position: absolute;
+    top: calc(100vh/3);
+    text-align: center;
+    pointer-events: none;
+    z-index: 0;
 }
