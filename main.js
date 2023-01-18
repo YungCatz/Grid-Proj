@@ -38,7 +38,7 @@ function update() {
     document.getElementById("column").innerHTML = `Columns: ${rows}`;
     document.getElementById("rowscolumns").innerHTML = `Rows * Columns: ${rowsAndColumns}`;
     document.getElementById("squareChilds").innerHTML = `Squares: ${grid.children.length}`;
-    document.getElementById("whatToDo").innerHTML = "";
+    document.getElementById("whatToDo").style.display = 'none';
 
     console.log(`${grid.children.length}`)
 }
@@ -72,7 +72,7 @@ function createSquares() {
 }*/
 
 
-/*function closestSquare() {
+function closestSquare() {
     let elementsUI = document.querySelectorAll('div.inner-grid');
     elementsUI.className == 'inner-grid';
     elementsUI.forEach(function (item) {
@@ -94,7 +94,7 @@ function hide(event) {
 }
 function show(event) {
     event.srcElement.className = 'selected';
-}*/
+}
 
 function resize() {
     update();
