@@ -73,7 +73,7 @@ function createSquares() {
 
 
 function closestSquare() {
-    let elementsUI = document.querySelectorAll('.inner-grid');
+    let elementsUI = document.querySelectorAll('div.inner-grid');
     elementsUI.className == 'inner-grid';
     elementsUI.forEach(function (item) {
         item.addEventListener("mouseenter", show);
@@ -81,6 +81,9 @@ function closestSquare() {
         item.addEventListener("mouseleave", hide);
         item.addEventListener("focusout", hide);
     });
+
+    const closest = elementsUI.closest;
+    console.log(closest);
 }
 
 
