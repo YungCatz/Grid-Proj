@@ -1,3 +1,9 @@
+var script = document.createElement('script');
+script.src = 'https://code.jquery.com/jquery-3.6.3.min.js';
+document.getElementsByTagName('head')[0].appendChild(script);
+
+document.addEventListener("DOMContentLoaded", closestSquare);
+
 window.onresize = resize;
 
 const grid = document.getElementById('grid');
@@ -15,6 +21,7 @@ let rowsAndColumns;
 
 const square = document.createElement('div');
 square.classList.add('inner-grid');
+square.setAttribute('onmouseover', 'closestSquare()');
 
 const gridStyle = document.createElement('style');
 document.head.appendChild(gridStyle);
@@ -54,6 +61,36 @@ function createSquares() {
 
         }
     }
+}
+
+/*function closestSquare() {
+    let hoveredElements = document.querySelectorAll(':hover');
+
+    hoverdElements.style.
+
+        console.log(hoverdElements);
+}*/
+
+
+function closestSquare() {
+    let elementsUI = document.querySelectorAll('.inner-grid');
+    elementsUI.className == 'inner-grid';
+    elementsUI.forEach(function (item) {
+        item.addEventListener("mouseenter", show);
+        item.addEventListener("focus", show);
+        item.addEventListener("mouseleave", hide);
+        item.addEventListener("focusout", hide);
+    });
+}
+
+
+function hide(event) {
+    if (event.srcElement !== document.querySelector(":hover")) {
+        event.srcElement.className = 'inner-grid';
+    }
+}
+function show(event) {
+    event.srcElement.className = 'selected';
 }
 
 function resize() {
