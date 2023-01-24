@@ -10,18 +10,117 @@
 </head>
 
 <body>
-    <!--<div class="tabStyle">Rectangle</div>-->
-    <section>
-        <section class="shapes">
-            <div class="circInCirc">
-                <span class="yo"></span>
-            </div>
-        </section>
-        <section class="temperature">
+    <div class="selection">
+        <a class="backBTN" href="../index.html"><button><-Home </button></a>
 
-        </section>
-        <section></section>
-    </section>
+        <label>
+            <input type="radio" id="none" name="radio" checked />
+            <span>None</span>
+        </label>
+        <label>
+            <input type="radio" id="weather" name="radio" />
+            <span>Weather</span>
+        </label>
+        <label>
+            <input type="radio" id="temperature" name="radio" />
+            <span>Temperature</span>
+        </label>
+        <label>
+            <input type="radio" id="lightControl" name="radio" />
+            <span>Light Control</span>
+        </label>
+    </div>
+
+    <div class="wrapper">
+
+        <div class="weather">
+            <div class="weather-dark">
+                <header>
+                    <div>SET</div>
+                    <div>TODAY</div>
+                    <div>BLANK</div>
+                </header>
+
+                <main>
+                    <div>ICON</div>
+                    <div>TYPE</div>
+                    <div>DEGREES</div>
+                </main>
+
+                <footer class="forecast-days">
+                    <div class="column1">
+                        <div>DAY</div>
+                        <div>ICON</div>
+                        <div>DEGREE</div>
+                    </div>
+                    <div class="column2">
+                        <div>DAY</div>
+                        <div>ICON</div>
+                        <div>DEGREE</div>
+                    </div>
+                    <div class="column3">
+                        <div>DAY</div>
+                        <div>ICON</div>
+                        <div>DEGREE</div>
+                    </div>
+                    <div class="column4">
+                        <div>DAY</div>
+                        <div>ICON</div>
+                        <div>DEGREE</div>
+                    </div>
+                    <div class="column5">
+                        <div>DAY</div>
+                        <div>ICON</div>
+                        <div>DEGREE</div>
+                    </div>
+                </footer>
+            </div>
+            <div class="weather-light">
+                <header>
+                    <div>SET</div>
+                    <div>TODAY</div>
+                    <div>BLANK</div>
+                </header>
+
+                <main>
+                    <div>ICON</div>
+                    <div>TYPE</div>
+                    <div>DEGREES</div>
+                </main>
+
+                <footer class="forecast-days">
+                    <div class="column1">
+                        <div>DAY</div>
+                        <div>ICON</div>
+                        <div>DEGREE</div>
+                    </div>
+                    <div class="column2">
+                        <div>DAY</div>
+                        <div>ICON</div>
+                        <div>DEGREE</div>
+                    </div>
+                    <div class="column3">
+                        <div>DAY</div>
+                        <div>ICON</div>
+                        <div>DEGREE</div>
+                    </div>
+                    <div class="column4">
+                        <div>DAY</div>
+                        <div>ICON</div>
+                        <div>DEGREE</div>
+                    </div>
+                    <div class="column5">
+                        <div>DAY</div>
+                        <div>ICON</div>
+                        <div>DEGREE</div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <!--<div class="weather-light"></div>-->
+    </div>
+
+    </div>
 
     <script src="main.js" async>
     </script>
