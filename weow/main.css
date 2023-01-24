@@ -1,0 +1,135 @@
+:root {
+    --sec: #36393f;
+    --main: #202225;
+    --accent: #bfacfb;
+    --main-light: #333539;
+    --main-dark: #141518;
+}
+
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+body {
+    overflow: hidden;
+    content: "";
+    background: #36393f;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body>section {
+    content: "";
+    background: #202225;
+    width: 60rem;
+    height: 35rem;
+    border-radius: 25px;
+    background: #202225;
+    box-shadow: 10px 10px 20px #16181a,
+        -10px -10px 20px #2a2c30;
+    z-index: -99;
+}
+
+.circInCirc {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: var(--sec);
+    border-radius: 50%;
+    border: 1px solid #202225;
+    box-shadow: inset 10px 10px 20px #16181a,
+        inset -10px -10px 20px #2a2c30;
+
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.circInCirc:before {
+    content: "";
+    top: 25px;
+    left: 25px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #202225;
+    box-shadow: 10px 10px 20px #16181a,
+        -10px -10px 20px #2a2c30;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.circInCirc:hover:before {
+    width: 60px !important;
+    height: 60px !important;
+    left: 20px;
+    top: 20px;
+}
+
+.yo {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: var(--accent);
+    position: absolute;
+    z-index: -1;
+}
+
+/*.tabStyle {
+    border-style: solid;
+    border-color: #D8D8D8;
+    background: #D8D8D8;
+    width: 200px;
+    height: 93px;
+    color: #000;
+    position: relative;
+    top: 10px;
+    left: 49px;
+    text-align: center;
+}
+
+.tabStyle:hover {
+    background: #000;
+    border-color: #000;
+}
+
+.tabStyle:hover::before {
+    border-color: transparent #000 #000 transparent;
+    border-style: solid;
+    border-width: 0px 0px 100px 50px;
+}
+
+.tabStyle:hover::after {
+    border-color: transparent transparent #000 #000;
+    border-style: solid;
+    border-width: 0px 50px 100px 0px;
+}
+
+.tabStyle::after {
+    border-color: transparent transparent #D8D8D8 #D8D8D8;
+    border-style: solid;
+    border-width: 0px 50px 100px 0px;
+    position: absolute;
+    top: -4px;
+    left: 101%;
+    content: "";
+}
+
+.tabStyle::before {
+    border-color: transparent #D8D8D8 #D8D8D8 transparent;
+    border-style: solid;
+    border-width: 0px 0px 100px 50px;
+    position: absolute;
+    top: -4px;
+    right: 101%;
+    content: "";
+}*/

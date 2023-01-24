@@ -4,49 +4,51 @@
 <head>
     <meta charset=" UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" media="(prefers-color-sheme: dark)" content="#35363a">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale = 1, user-scalable = no">
-    <link rel="icon" type="image/x-icon" href="cdn/icons/icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <title>Learn YungCat</title>
-    <meta name="description" content="<!--This is a learning Website-->">
-
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://learn.yungcat.de/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Learn YungCat">
-    <meta property="og:description" content="<!--This is a learning Website-->">
-    <meta property="og:image" content="https://yungcat.de/cdn/images/luna.jpeg">
-
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="learn.yungcat.de">
-    <meta property="twitter:url" content="https://learn.yungcat.de/">
-    <meta name="twitter:title" content="Learn YungCat">
-    <meta name="twitter:description" content="<!--This is a learning Website-->">
-    <meta name="twitter:image" content="https://yungcat.de/cdn/images/luna.jpeg">
-
+    <title>YungCat is Learning...</title>
 </head>
 
-<!--YungCatz | Andreas-->
-
 <body>
-    <div class="bg"></div>
-    <div class="thing">
-        <h1 id="rows"></h1>
-        <h1 id="column"></h1>
-        <h1 id="rowscolumns"></h1>
-        <h1 id="squareChilds"></h1>
-    </div>
-    <h1 id="whatToDo">PLEASE RESIZE THIS WINDOW <br>EITHER WITH CTRL + '+' or '-' <br>OR BY DRAG RESIZING</h1>
-    <div class="background-grid">
-        <div id="grid" class="grid">
-            <div class="inner-grid" onmouseover="closestSquare()"></div>
+    <div class="stars""></div>
+
+    <div class=" wrapper">
+        <div class="title-anim">
+            <span class="dotted"></span>
+            <h1>learn.yungcat.de</h1>
+            <div class="pac-man">
+            </div>
+        </div>
+        <div class="grid">
+            <div class="outer">
+                <h1>Responsive Grid</h1>
+                <p>This is currently a Responsive Grid <br> It might be a Game in the Future</p>
+                <a href="javascript:setTimeout(()=>{window.location = '/responsGrid' },500);"><button>--> Go
+                        To</button></a>
+            </div>
+            <div class="outer">
+                <h1>UI / UX</h1>
+                <p>These are examples for Projects
+                    <br> i want to do, and there UIs
+                </p>
+                <a href="javascript:setTimeout(()=>{window.location = '/weow' },500);"><button>--> Go To</button></a>
+            </div>
+            <div class="outer">
+                <h1> - - - - -</h1>
+                <p> - - - - - - - - - - - - - - - - - - - -<br> - - - - - - - - - - - - - - - - - - - -</p>
+                <a href="javascript:setTimeout(()=>{window.location = '' },500);"><button>--> Go To</button></a>
+            </div>
+            <div class="outer">
+                <h1> - - - - -</h1>
+                <p> - - - - - - - - - - - - - - - - - - - -
+                    <br> - - - - - - - - - - - - - - - - - - - -
+                </p>
+                <a href="javascript:setTimeout(()=>{window.location = '' },500);"><button>--> Go To</button></a>
+            </div>
         </div>
     </div>
 
-    <script src="main.js" async>
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>
