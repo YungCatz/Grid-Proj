@@ -26,14 +26,14 @@
             <span>Temperature</span>
         </label>
         <label>
-            <input type="radio" id="lightControl" name="radio" />
+            <input type="radio" id="lightCTRL" name="radio" />
             <span>Light Control</span>
         </label>
     </div>
 
     <div class="wrapper">
 
-        <div class="weather">
+        <div id="weather-ui" class="weather">
             <div class="weather-dark">
                 <header>
                     <div><svg width="25" height="16.5" viewBox="0 0 50 33" fill="none"
@@ -63,7 +63,7 @@
                     <div>CHILLY</div>
                 </main>
 
-                <footer class="forecast-days">
+                <footer class="forecast-days-dark">
                     <div class="column1">
                         <div><svg width="30.5" height="30.5" viewBox="0 0 61 61" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -252,7 +252,7 @@
                     <div>CHILLY</div>
                 </main>
 
-                <footer class="forecast-days">
+                <footer class="forecast-days-light">
                     <div class="column1">
                         <div><svg width="30.5" height="30.5" viewBox="0 0 61 61" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -411,6 +411,32 @@
                         <div>WED</div>
                     </div>
                 </footer>
+            </div>
+        </div>
+
+        <div id="temp-ui" class="temperature">
+            <div class="temp-dark">
+                <header> - - - - - -</header>
+                <main> - - - - - -</main>
+                <footer> - - - - - -</footer>
+            </div>
+            <div class="temp-light">
+                <header> - - - - - -</header>
+                <main> - - - - - -</main>
+                <footer> - - - - - -</footer>
+            </div>
+        </div>
+
+        <div id="lightCtrl-ui" class="lightCTRL">
+            <div class="lightCtrl-dark">
+                <header> - - - - - -</header>
+                <main> - - - - - -</main>
+                <footer> - - - - - -</footer>
+            </div>
+            <div class="lightCtrl-light">
+                <header> - - - - - -</header>
+                <main> - - - - - -</main>
+                <footer> - - - - - -</footer>
             </div>
         </div>
 
