@@ -25,7 +25,15 @@
 }
 
 body {
-    background-color: var(--main);
+    background: url(../cdn/images/ripples\ \(3\).png);
+    backdrop-filter: invert(1) blur(1px) brightness(1.8);
+    position: absolute;
+}
+
+@keyframes bg-reverse {
+    100% {
+        background-position: 50px 0px;
+    }
 }
 
 .backBTN,

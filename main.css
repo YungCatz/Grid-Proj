@@ -182,16 +182,16 @@ body {
     left: 10px;
     width: 500px;
     border-bottom: 5px dotted var(--accent);
-    animation: move .5s infinite linear;
+    animation: move 2s infinite linear;
 }
 
 @keyframes move {
     0% {
-        transform: translateX(-5%);
+        transform: translateX(-2%);
     }
 
     100% {
-        transform: translateX(5%);
+        transform: translateX(2%);
     }
 }
 
